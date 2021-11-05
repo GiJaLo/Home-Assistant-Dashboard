@@ -59,6 +59,7 @@ You should place this on top of the editor.
 background: var(--background-image)
 ```
 
+<hr style="border:2px solid gray"> </hr>
 
 ## HACS-Frontend
 ### Sidebar
@@ -184,4 +185,6 @@ sidebar:
             navigation_path: /scherm-beneden/0
 views:
 ```
+<hr style="border:2px solid gray"> </hr>
+
 
