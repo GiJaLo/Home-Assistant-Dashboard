@@ -13,7 +13,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
 ## Overview <!-- omit in toc -->
 
 - [Theme](#theme)
-- [HACS](#hacs)
+- [HACS-Frontend](#hacs)
   - [Sidebar](#sidebar)
         - [Intro](#editing)
         - [Editing](#editing)
@@ -55,7 +55,7 @@ background: var(--background-image)
 ```
 
 
-## HACS
+## HACS-Frontend
 ### Sidebar
 #### Intro
 As we set the theme already now we can switch over to the interface. On the left side I have the sidebard-card. This stays on every page in your dashboard - it's fixed.
