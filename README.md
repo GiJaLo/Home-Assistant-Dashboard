@@ -16,23 +16,16 @@ More information: https://hacs.xyz/docs/basic/getting_started
 
 ## Overview <!-- omit in toc -->
 - [Theme](#theme)
+- [Cards](#cards)
 - [Setup](#setup)
-- [HACS-Frontend](#hacs)
-  - [Cards Used](#cards)
   - [Sidebar](#sidebar)
         - [Intro](#editing)
         - [Editing](#editing)
         - [Code-](#ed)
-  - 
   - [Button-card](#button-card)
         - [Intro](#editing)
         - [Editing](#editing)
         - [Code-](#ed)
-  - [Mini-mediaplayer](#mini-mediaplayer)
-- [Code](#code)
-  - [Sidebar](#sidebar)
-  - [Button-card](#button-card)
-  - [Mini-mediaplayer](#mini-mediaplayer)
 - [Examples](#examples)
 
 
@@ -72,28 +65,30 @@ background: var(--background-image)
 
 <hr style="border:4px solid gray"> </hr>
 
-## Setup
+## Cards
 
-If you like my dashboard it is important to know how I've set this up. I like to use a lot of views/pages/tabs or whatever you like to call it.
-This is an example below, I only added music and my robovacuum cleaner. So I use the bottom row with the buttons to navigate through my dashboard. And on the left side the home button that always will navigate home.
+As we set the theme already now we can switch over to the interface. But before with do that we need to have some frontend lovelace cards from HACS.
 
-![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/overview.JPG)
+###Sometimes it is possible that you can't find for example the sidebar-card on HACS. This is because you have to add it manually to HACS###
 
-When you add a new view/page/tab I always change the setting to a grid layout.
+A little tip: 
 
-![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/settings.JPG)
+- Open HACS
+              
+- Open Frontend
+              
+- Top-right corner click on the 3 dots
 
-Below you find how I always setup a view/page/tab
+- Adjusted Repositories
 
-![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/setup1.jpg)
+- Copy link (like sidebar card below)
 
+- Category: Lovelace
 
-<hr style="border:4px solid gray"> </hr>
+- Add
+              
+Now you can find the sidebard-card in your frontend section off HACS.
 
-
-## HACS-Frontend
-
-### Cards
 
 These are cards I've used with HACS:
 
@@ -132,33 +127,36 @@ These are cards I've used with HACS:
 - Sidebar Card
 
   Link: https://github.com/DBuit/sidebar-card
+  
+<hr style="border:4px solid gray"> </hr>
+
+
+## Setup
+
+If you like my dashboard it is important to know how I've set this up. I like to use a lot of views/pages/tabs or whatever you like to call it.
+This is an example below, I only added music and my robovacuum cleaner. So I use the bottom row with the buttons to navigate through my dashboard. And on the left side the home button that always will navigate home.
+
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/overview.JPG)
+
+When you add a new view/page/tab I always change the setting to a grid layout.
+
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/settings.JPG)
+
+Below you find how I always setup a view/page/tab
+
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/setup1.jpg)
+
+
+<hr style="border:4px solid gray"> </hr>
+
+
+## HACS-Frontend
+
 
 
 ### Sidebar
 #### Intro
-As we set the theme already now we can switch over to the interface. On the left side I have the sidebard-card. This stays on every page in your dashboard - it's fixed.
 
-Installation is through HACS - fronted 
-
-!!!!!Sometimes it is possible that you can't find for example the sidebar-card on HACS. This is because you have to add it manually to HACS.!!!!
-
-A little tip: 
-
-- Open HACS
-              
-- Open Frontend
-              
-- Top-right corner click on the 3 dots
-
-- Adjusted Repositories
-
-- Copy link (like this one below)
-
-- Category: Lovelace
-
-- Add
-              
-Now you can find the sidebard-card in your frontend section off HACS.
 
 More information: https://github.com/DBuit/sidebar-card
 
