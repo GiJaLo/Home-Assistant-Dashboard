@@ -31,7 +31,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
 
 
 
-
+<hr style="border:2px solid gray"> </hr>
 
 
 ## Theme
@@ -186,5 +186,34 @@ sidebar:
 views:
 ```
 <hr style="border:2px solid gray"> </hr>
+
+
+### Button-card
+#### Intro
+This is maybe my absolute favourite lovelace card. I use it for almost everything! Like my example above for the bottom row of buttons, to navigate to other views.
+
+First install this with HACS and go to the github page: https://github.com/custom-cards/button-card
+It is a bit of read, but here I will show how I use it.
+
+#### Editing
+If the installation worked well we can add for example a simple button card to our new lovelace dashboard.
+- Open new dashboard
+- Topright corner click on the 3 dots
+- Configure UI
+- Add new Card
+- Scroll down to Manually (add your own adjusted card)
+- Past the code below
+
+```yaml
+type: custom:button-card
+color_type: card
+color: rgba(10, 10, 10, 0.4)
+icon: mdi:flash
+name: Energie
+tap_action:
+  action: navigate
+  navigation_path: /scherm-beneden/energie
+```
+
 
 
