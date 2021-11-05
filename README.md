@@ -59,7 +59,7 @@ You should place this on top of the editor.
 background: var(--background-image)
 ```
 
-<hr style="border:2px solid gray"> </hr>
+<hr style="border:4px solid gray"> </hr>
 
 ## HACS-Frontend
 ### Sidebar
@@ -426,6 +426,7 @@ views:
                   action: navigate
                   navigation_path: /scherm-beneden/temp
 ```
+<hr style="border:4px solid gray"> </hr>
 
 ## Music Main
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Music.jpg)
