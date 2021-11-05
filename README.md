@@ -607,9 +607,189 @@ views:
                   service_data:
                     entity_id: media_player.eetplaats_speaker
 ```
+<hr style="border:4px solid gray"> </hr>
+
 
 ## Music Channels
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Music-channels.jpg)
+
+```yaml
+- title: '4-Muziek '
+    path: muziek
+    type: custom:grid-layout
+    badges: []
+    cards:
+      - type: custom:layout-card
+        layout_type: horizontal
+        layout: {}
+        cards:
+          - type: custom:mini-media-player
+            entity: media_player.eetplaats_speaker
+            hide:
+              name: true
+              icon: true
+              power: true
+              source: true
+              controls: true
+              volume: true
+            artwork: full-cover
+            toggle_power: false
+            scale: '1.5'
+          - type: vertical-stack
+            cards:
+              - type: custom:mini-media-player
+                hide:
+                  name: false
+                  icon: true
+                  power: true
+                  source: true
+                  controls: true
+                  info: true
+                name: Eetplaats Speaker (Master)
+                entity: media_player.eetplaats_speaker
+              - type: custom:mini-media-player
+                hide:
+                  name: false
+                  icon: true
+                  power: true
+                  source: true
+                  controls: true
+                  info: true
+                name: Keuken Speaker
+                entity: media_player.keuken_speaker
+              - type: custom:mini-media-player
+                hide:
+                  name: false
+                  icon: true
+                  power: true
+                  source: true
+                  controls: true
+                  info: true
+                name: Televisie Speaker
+                entity: media_player.televisie_speaker
+              - type: entities
+                entities:
+                  - entity: input_boolean.sonos_join_keuken
+                    icon: mdi:speaker
+                    name: Keuken speaker joinen
+                  - entity: input_boolean.sonos_join_televisie
+                    name: Televisie speaker joinen
+                    icon: mdi:speaker
+                title: Speakergroep
+            title: Volume Speakers
+      - type: vertical-stack
+        cards:
+          - type: custom:button-card
+            color_type: blank-card
+            color: rgba(0, 0, 0, 0)
+            styles:
+              card:
+                - height: 0px
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: blank-card
+                color: rgba(0, 0, 0, 0)
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:radio
+                name: Zenders
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/zenders
+              - type: custom:button-card
+                color_type: blank-card
+                color: rgba(0, 0, 0, 0)
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:spotify
+                name: Spotify
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/spotify
+              - type: custom:button-card
+                color_type: blank-card
+                color: rgba(0, 0, 0, 0)
+      - type: vertical-stack
+        cards:
+          - type: custom:button-card
+            color_type: blank-card
+            color: rgba(0, 0, 0, 0)
+            styles:
+              card:
+                - height: 37px
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:skip-previous
+                name: Vorige
+                tap_action:
+                  action: call-service
+                  service: media_player.media_previous_track
+                  service_data:
+                    entity_id: media_player.eetplaats_speaker
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:skip-next
+                name: Volgende
+                tap_action:
+                  action: call-service
+                  service: media_player.media_next_track
+                  service_data:
+                    entity_id: media_player.eetplaats_speaker
+              - type: custom:button-card
+                color_type: blank-card
+                color: rgba(0, 0, 0, 0)
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:volume-minus
+                name: Stiller
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.muziek_volume_omlaag
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:volume-plus
+                name: Luider
+                tap_action:
+                  action: call-service
+                  service: script.turn_on
+                  service_data:
+                    entity_id: script.muziek_volume_omhoog
+              - type: custom:button-card
+                color_type: blank-card
+                color: rgba(0, 0, 0, 0)
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:play-pause
+                name: Play/Pause
+                tap_action:
+                  action: call-service
+                  service: media_player.media_play_pause
+                  service_data:
+                    entity_id: media_player.eetplaats_speaker
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:stop
+                name: Stop
+                tap_action:
+                  action: call-service
+                  service: media_player.media_stop
+                  service_data:
+                    entity_id: media_player.eetplaats_speaker
+```
+
 ## Vacuum Main (Choose floor)
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Vacuum.jpg)
 ## Vacuum 0 (Groundfloor)
