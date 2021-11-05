@@ -32,3 +32,9 @@ More information: https://hacs.xyz/docs/categories/themes
 For my GUI I've used the ios Dark theme (installed with HACS)
 
 More information: https://github.com/basnijholt/lovelace-ios-dark-mode-theme
+
+
+
+## HACS
+### Sidebar
+
