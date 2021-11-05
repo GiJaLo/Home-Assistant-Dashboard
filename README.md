@@ -85,7 +85,7 @@ When you add a new view/page/tab I always change the setting to a grid layout.
 
 Below you find how I always setup a view/page/tab
 
-![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/setup.jpg)
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/setup1.jpg)
 
 
 <hr style="border:4px solid gray"> </hr>
