@@ -21,6 +21,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
   - [Install](#install)
 - [Setup](#setup)
 - [Sidebar](#sidebar)
+- [Layout-card](#layout-card)
 - [Button-card](#button-card)
 - [Examples](#examples)
 
