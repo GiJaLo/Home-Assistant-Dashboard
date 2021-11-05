@@ -13,3 +13,7 @@ First of all, I would like to thank the whole awesome HA-community. I've found s
   - [Sidebar](#sidebar)
   - [Button-card](#button-card)
   - [Mini-mediaplayer](#mini-mediaplayer)
+- [Code](#code)
+  - [Sidebar](#sidebar)
+  - [Button-card](#button-card)
+  - [Mini-mediaplayer](#mini-mediaplayer)
