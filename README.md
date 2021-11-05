@@ -17,6 +17,8 @@ More information: https://hacs.xyz/docs/basic/getting_started
 ## Overview <!-- omit in toc -->
 - [Theme](#theme)
 - [Cards](#cards)
+  - [Info](#info)
+  - [Install](#install)
 - [Setup](#setup)
   - [Sidebar](#sidebar)
         - [Intro](#editing)
@@ -66,10 +68,11 @@ background: var(--background-image)
 <hr style="border:4px solid gray"> </hr>
 
 ## Cards
+### Info
 
 As we set the theme already now we can switch over to the interface. But before with do that we need to have some frontend lovelace cards from HACS.
 
-###Sometimes it is possible that you can't find for example the sidebar-card on HACS. This is because you have to add it manually to HACS###
+***Sometimes it is possible that you can't find for example the sidebar-card on HACS. This is because you have to add it manually to HACS***
 
 A little tip: 
 
@@ -89,6 +92,9 @@ A little tip:
               
 Now you can find the sidebard-card in your frontend section off HACS.
 
+<hr style="border:2px solid gray"> </hr>
+
+### Install
 
 These are cards I've used with HACS:
 
@@ -148,10 +154,6 @@ Below you find how I always setup a view/page/tab
 
 
 <hr style="border:4px solid gray"> </hr>
-
-
-## HACS-Frontend
-
 
 
 ### Sidebar
