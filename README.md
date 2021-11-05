@@ -30,7 +30,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
 
 
 
-<hr style="border:4px solid gray"> </hr>
+<hr style="border:8px solid gray"> </hr>
 
 
 ## Theme
@@ -59,7 +59,7 @@ You should place this on top of the editor.
 background: var(--background-image)
 ```
 
-<hr style="border:4px solid gray"> </hr>
+<hr style="border:8px solid gray"> </hr>
 
 ## Cards
 ### Info
@@ -86,7 +86,7 @@ A little tip:
               
 Now you can find the sidebard-card in your frontend section off HACS.
 
-<hr style="border:2px solid gray"> </hr>
+<hr style="border:1px solid gray"> </hr>
 
 ### Install
 
@@ -128,7 +128,7 @@ These are cards I've used with HACS:
 
   Link: https://github.com/DBuit/sidebar-card
   
-<hr style="border:4px solid gray"> </hr>
+<hr style="border:8px solid gray"> </hr>
 
 
 ## Setup
@@ -147,7 +147,7 @@ Below you find how I always setup a view/page/tab
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/setup2.jpg)
 
 
-<hr style="border:4px solid gray"> </hr>
+<hr style="border:8px solid gray"> </hr>
 
 
 ## Sidebar
@@ -246,9 +246,14 @@ sidebar:
             navigation_path: /scherm-beneden/0
 views:
 ```
-<hr style="border:2px solid gray"> </hr>
+<hr style="border:8px solid gray"> </hr>
 
+## Layout-card
+### Setup
+So we are looking at our dashboard and at the moment we only have a sidebar on the left. Time to add some cards...
+As mentioned above in #setup the layout-card is the card where all the collections of cards are. (Like my homepage)
 
+<hr style="border:8px solid gray"> </hr>
 ## Button-card
 ### Setup
 If the installation worked well we can add for example a simple button card to our new lovelace dashboard.
