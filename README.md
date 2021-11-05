@@ -26,15 +26,18 @@ If you would like a setup like this, it would be handy if you already have HACS 
 
 
 ## Theme
-IMPORTANT: To use themes from HACS you'll have to add somde code to your configuration file.
+IMPORTANT: To use themes from HACS you'll have to add some code to your configuration file.
 More information: https://hacs.xyz/docs/categories/themes
 
 For my GUI I've used the ios Dark theme (installed with HACS)
 
 More information: https://github.com/basnijholt/lovelace-ios-dark-mode-theme
 
+```yaml
+background: var(--background-image)
+```
 
 
 ## HACS
 ### Sidebar
-
+As we set the theme already
