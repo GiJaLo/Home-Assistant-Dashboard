@@ -30,7 +30,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
 - [Examples](#examples)
 
 
-
+[Just want to copy some code? Go to examples]
 <hr style="border:2px solid gray"> </hr>
 
 
