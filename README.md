@@ -1,12 +1,14 @@
 # Home-Assistant-Dashboard
 My Home Assistant Dashboard
 
-***Still under construction!!!***
+***This page is still under construction!!!***
 
 
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
 
 First of all, I would like to thank the whole awesome HA-community. I've found so much inspiration from other awesome setups and handy tools for setting up my dashboard. Will also post these in her.
+
+I'm not the CSS expert or any kind. I've challenged myself to make everything in Lovelace dashboard with custom cards. There are some workarounds for some problems that I created myself(workarounds but also problems). Maybe there are better solutions.. You can always let me know.
 
 If you would like a setup like this, it would be handy if you already have HACS installed.
 
