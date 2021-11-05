@@ -34,7 +34,9 @@ frontend:  themes: !include_dir_merge_named themes
 ```
 More information: https://hacs.xyz/docs/categories/themes
 
-<li>Line 1</li>
+
+<br />
+
 
 For my GUI I've used the ios Dark theme (installed with HACS)
 
