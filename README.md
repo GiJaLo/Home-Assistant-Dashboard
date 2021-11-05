@@ -59,13 +59,22 @@ As we set the theme already now we can switch over to the interface. On the left
 Installation is through HACS - fronted 
 
 !!!!!Sometimes it is possible that you can't find for example the sidebar-card on HACS. This is because you have to add it manually to HACS.!!!!
-A little tip: - Open HACS
-              - Open Frontend
-              - Top-right corner click on the 3 dots
-              - Adjusted Repositories
-              - Copy link (like this one below)
-              - Category: Lovelace
-              - Add
+
+A little tip: 
+
+- Open HACS
+              
+- Open Frontend
+              
+- Top-right corner click on the 3 dots
+
+- Adjusted Repositories
+
+- Copy link (like this one below)
+
+- Category: Lovelace
+
+- Add
               
 Now you can find the sidebard-card in your frontend section off HACS.
 
