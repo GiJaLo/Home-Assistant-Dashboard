@@ -217,6 +217,215 @@ tap_action:
 
 ## Examples
 ## Home
+
+```yaml
+views:
+  - title: Home
+    type: custom:grid-layout
+    badges: []
+    cards:
+      - type: custom:layout-card
+        layout_type: masonry
+        layout: {}
+        cards:
+          - type: custom:alarmo-card
+            entity: alarm_control_panel.alarmo
+            keep_keypad_visible: false
+            name: Alarm
+            use_clear_icon: false
+            button_scale: 1.3
+          - type: custom:power-distribution-card
+            title: ''
+            entities:
+              - decimals: '3'
+                display_abs: true
+                name: Huis
+                unit_of_display: adaptive
+                consumer: true
+                icon: mdi:home
+                entity: sensor.verbruik_huistot
+                preset: home
+                icon_color:
+                  bigger: ''
+                  equal: ''
+                  smaller: ''
+                invert_value: true
+              - decimals: '2'
+                display_abs: true
+                name: Net
+                unit_of_display: adaptive
+                icon: mdi:transmission-tower
+                entity: sensor.verbruik_consumtion
+                preset: grid
+                icon_color:
+                  bigger: ''
+                  equal: ''
+                  smaller: ''
+              - decimals: '2'
+                display_abs: true
+                name: Zon
+                unit_of_display: adaptive
+                icon: mdi:solar-power
+                producer: true
+                entity: sensor.fronius_ac_power
+                preset: solar
+                icon_color:
+                  bigger: ''
+                  equal: ''
+                  smaller: ''
+                invert_value: false
+                calc_excluded: false
+              - decimals: '2'
+                display_abs: true
+                name: Net
+                unit_of_display: adaptive
+                icon: mdi:transmission-tower
+                entity: sensor.verbruik_producion
+                preset: grid
+                icon_color:
+                  bigger: ''
+                  equal: ''
+                  smaller: ''
+                invert_value: true
+            center:
+              type: card
+              content:
+                type: glance
+                entities:
+                  - sun.sun
+            animation: slide
+          - type: entities
+            entities:
+              - entity: sensor.recycleapp_afval_pmd
+                name: PMD
+                icon: mdi:bottle-soda-classic
+              - entity: sensor.recycleapp_afval_restafval
+                icon: mdi:delete-empty
+                name: Rest
+              - entity: sensor.recycleapp_afval_papier
+                icon: mdi:newspaper-variant
+                name: Papier/Karton
+              - entity: sensor.recycleapp_afval_grofvuil
+                name: Grof
+                icon: mdi:human-female
+          - type: custom:weather-card
+            entity: weather.home
+            number_of_forecasts: '5'
+            details: true
+          - type: glance
+            entities:
+              - entity: person.so
+              - entity: person.lo
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:play-pause
+                name: Muziek
+                tap_action:
+                  action: call-service
+                  service: media_player.media_play_pause
+                  service_data:
+                    entity_id: media_player.eetplaats_speaker
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:lightbulb-on
+                name: Verlichting
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                entity: input_boolean.stofzuiger_quick
+                icon: mdi:robot-vacuum
+                name: Gaston
+                state:
+                  - value: 'off'
+                    color: rgba(10, 10, 10, 0.4)
+                  - value: 'on'
+                    color: auto
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:robot-mower
+                name: Jeanine
+      - type: vertical-stack
+        cards:
+          - type: custom:button-card
+            color_type: blank-card
+            color: rgba(0, 0, 0, 0)
+            styles:
+              card:
+                - height: 55px
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:flash
+                name: Energie
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/energie
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:lock
+                name: Beveiliging
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/beveiliging
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:lamp
+                name: Verlichting
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/verlichting
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:music
+                name: Muziek
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/muziek
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:robot-vacuum
+                name: Gaston
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/stofzuiger
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:robot-mower
+                name: Jeanine
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/maaier
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:calendar-check
+                name: Taakjes
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/taken
+              - type: custom:button-card
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                icon: mdi:glasses
+                name: Nerd
+                tap_action:
+                  action: navigate
+                  navigation_path: /scherm-beneden/temp
+```
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
 ## Music Main
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Music.jpg)
