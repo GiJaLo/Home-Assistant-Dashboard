@@ -20,14 +20,14 @@ More information: https://hacs.xyz/docs/basic/getting_started
   - [Info](#info)
   - [Install](#install)
 - [Setup](#setup)
-  - [Sidebar](#sidebar)
-        - [Intro](#editing)
-        - [Editing](#editing)
-        - [Code-](#ed)
-  - [Button-card](#button-card)
-        - [Intro](#editing)
-        - [Editing](#editing)
-        - [Code-](#ed)
+- [Sidebar](#sidebar)
+  - [Intro](#setup)
+  - [Editing](#editing)
+  - [Code-](#ed)
+- [Button-card](#button-card)
+  - [Intro](#editing)
+  - [Editing](#editing)
+  - [Code-](#ed)
 - [Examples](#examples)
 
 
@@ -150,19 +150,14 @@ When you add a new view/page/tab I always change the setting to a grid layout.
 
 Below you find how I always setup a view/page/tab
 
-![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/setup1.jpg)
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/setup2.jpg)
 
 
 <hr style="border:4px solid gray"> </hr>
 
 
-### Sidebar
-#### Intro
-
-
-More information: https://github.com/DBuit/sidebar-card
-
-#### Editing
+## Sidebar
+### Setup
 To add the sidebar to your lovelace dashboard. You need to add it to your Raw Configuration Editor.
 The what the what?
 - Make a new lovelave dashboard/ or use your existing one
@@ -175,10 +170,10 @@ The what the what?
 - Click on "Raw Configuration Editor" (Could also have an other name, my HA is set to Dutch)
 - Here you have the full file of your dashboard.
 
-First have a look of the code below
+First have a look of the **code
 
 So what do we see here?
-Everything that is above views is the overall "setting" of your dashboard. Here is where we put the background and also the sidebar.
+Everything that is above "views" is the overall "setting" of your dashboard. Here is where we put the background and also the sidebar.
 Because these 2 things are fixed.
 
 
@@ -187,7 +182,7 @@ All above this
 views:
 ```
 
-#### Code
+### Code
 ```yaml
 background: var(--background-image)
 sidebar:
