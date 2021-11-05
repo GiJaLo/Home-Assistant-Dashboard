@@ -42,13 +42,16 @@ More information: https://hacs.xyz/docs/basic/getting_started
 
 
 <hr style="border:4px solid gray"> </hr>
+
 ## Setup
 
 If you like my dashboard it is important to know how I've set this up. I like to use a lot of views/pages/tabs or whatever you like to call it.
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/overview.JPG)
 
 <hr style="border:4px solid gray"> </hr>
+
 ## Theme
+
 IMPORTANT: To use themes from HACS you'll have to add some code to your configuration file.
 
 Add this to your configuration.yaml
