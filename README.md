@@ -84,21 +84,27 @@ Link: https://github.com/JonahKr/power-distribution-card
 Link: https://github.com/denysdovhan/vacuum-card
 
 - Mini Media Player
+
 Link: https://github.com/kalkih/mini-media-player
 
 - Kiosk Mode
+
 Link: https://github.com/maykar/kiosk-mode
 
 - Alarmo Card
+
 Link: https://github.com/nielsfaber/alarmo-card
 
 - Button Card
+
 Link: https://github.com/custom-cards/button-card
 
 - Layout card
+
 Link: https://github.com/thomasloven/lovelace-layout-card
 
 -Sidebar Card
+
 Link: https://github.com/DBuit/sidebar-card
 
 
