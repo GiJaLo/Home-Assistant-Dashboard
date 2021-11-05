@@ -75,9 +75,17 @@ background: var(--background-image)
 ## Setup
 
 If you like my dashboard it is important to know how I've set this up. I like to use a lot of views/pages/tabs or whatever you like to call it.
-This is an example below, I only added music and my robovacuum cleaner.
+This is an example below, I only added music and my robovacuum cleaner. So I use the bottom row with the buttons to navigate through my dashboard. And on the left side the home button that always will navigate home.
+
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/overview.JPG)
 
+When you add a new view/page/tab I always change the setting to a grid layout.
+
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/settings.JPG)
+
+Below you find how I always setup a view/page/tab
+
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/setup.jpg)
 
 
 <hr style="border:4px solid gray"> </hr>
