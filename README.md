@@ -10,3 +10,6 @@ First of all, I would like to thank the whole awesome HA-community. I've found s
 
 - [Theme](#theme)
 - [HACS](#hacs)
+  - [Sidebar](#sidebar)
+  - [Button-card](#button-card)
+  - [Mini-mediaplayer](#mini-mediaplayer)
