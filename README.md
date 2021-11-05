@@ -82,6 +82,71 @@ More information: https://github.com/DBuit/sidebar-card
 
 
 ```yaml
-frontend:  themes: !include_dir_merge_named themes
+background: var(--background-image)
+sidebar:
+  hideHassSidebar: false
+  digitalClock: true
+  clock: false
+  hideTopMenu: false
+  showTopMenuOnMobile: false
+  date: true
+  dateFormat: dddd, DD MMMM
+  title: null
+  style: |
+    :host {
+       --sidebar-background: transparent!important;
+       --sidebar-text-color: #EEE;
+       --face-color: #333;
+       --face-border-color: #EEE;
+       --clock-hands-color: #FFF;
+       --clock-seconds-hand-color: #FF4B3E;
+       --clock-middle-background: transparent!important;
+       --clock-middle-border: #EEE;
+     }
+  width:
+    mobile: 0
+    tablet: 15
+    desktop: 18
+  breakpoints:
+    mobile: 768
+    tablet: 1024
+  template: >
+
+
+    <li>__________________________</li> <li>Afval:</li> {% if "Geen" in
+    states('sensor.recycleapp_afval_morgen') %} <li>Morgen geen
+    afvalophaling</li> {% endif %}
+
+    {% if "Morgen" in states('sensor.blink_papier') %} <li>Morgen oudpapier aan
+    de straat</li> {% endif %}
+
+    {% if "Morgen" in states('sensor.blink_pmd') %} <li>Morgen plastic aan de
+    straat</li> {% endif %}
+
+    {% if "Morgen" in states('sensor.blink_restafval') %} <li>Morgen grijzebak
+    aan de straat</li> {% endif %}
+
+    {% if states('sensor.current_lights_on') | float > 0 %}
+    <li>{{states('sensor.current_lights_on')}} lampen aan</li> {% endif %}
+
+    {% if states('sensor.current_media_players_on') | float > 0 %}
+    <li>{{states('sensor.current_media_players_on')}} speakers aan</li> {% endif
+    %}  <li>__________________________</li> <li>Kalender:</li> <li>Geen jarigen
+    deze week</li>
+  bottomCard:
+    type: horizontal-stack
+    cardOptions:
+      cards:
+        - type: custom:button-card
+          color_type: label-card
+          color: rgb(255, 255, 255)
+          icon: mdi:home
+          styles:
+            card:
+              - height: 79px
+              - width: 200px
+          tap_action:
+            action: navigate
+            navigation_path: /scherm-beneden/0
 ```
 
