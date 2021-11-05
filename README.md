@@ -27,7 +27,14 @@ If you would like a setup like this, it would be handy if you already have HACS 
 
 ## Theme
 IMPORTANT: To use themes from HACS you'll have to add some code to your configuration file.
+
+Add this to your configuration.yaml
+```yaml
+frontend:  themes: !include_dir_merge_named themes
+```
 More information: https://hacs.xyz/docs/categories/themes
+
+
 
 For my GUI I've used the ios Dark theme (installed with HACS)
 
