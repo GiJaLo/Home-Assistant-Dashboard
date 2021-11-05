@@ -75,37 +75,40 @@ background: var(--background-image)
 These are cards I've used with HACS:
 
 - Weather Card
-Link: https://github.com/bramkragten/weather-card
+
+  Link: https://github.com/bramkragten/weather-card
 
 - Power-distribution-card
-Link: https://github.com/JonahKr/power-distribution-card
+
+  Link: https://github.com/JonahKr/power-distribution-card
 
 - Vacuum Card
-Link: https://github.com/denysdovhan/vacuum-card
+
+  Link: https://github.com/denysdovhan/vacuum-card
 
 - Mini Media Player
 
-Link: https://github.com/kalkih/mini-media-player
+  Link: https://github.com/kalkih/mini-media-player
 
 - Kiosk Mode
 
-Link: https://github.com/maykar/kiosk-mode
+  Link: https://github.com/maykar/kiosk-mode
 
 - Alarmo Card
 
-Link: https://github.com/nielsfaber/alarmo-card
+  Link: https://github.com/nielsfaber/alarmo-card
 
 - Button Card
 
-Link: https://github.com/custom-cards/button-card
+  Link: https://github.com/custom-cards/button-card
 
 - Layout card
 
-Link: https://github.com/thomasloven/lovelace-layout-card
+  Link: https://github.com/thomasloven/lovelace-layout-card
 
--Sidebar Card
+- Sidebar Card
 
-Link: https://github.com/DBuit/sidebar-card
+  Link: https://github.com/DBuit/sidebar-card
 
 
 ### Sidebar
