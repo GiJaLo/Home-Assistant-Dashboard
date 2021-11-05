@@ -1,6 +1,8 @@
 # Home-Assistant-Dashboard
 My Home Assistant Dashboard
 
+***Still under construction!!!***
+
 
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
 
