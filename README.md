@@ -14,6 +14,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
 
 - [Theme](#theme)
 - [HACS-Frontend](#hacs)
+  - [Cards Used](#cards)
   - [Sidebar](#sidebar)
         - [Intro](#editing)
         - [Editing](#editing)
@@ -66,6 +67,11 @@ background: var(--background-image)
 <hr style="border:4px solid gray"> </hr>
 
 ## HACS-Frontend
+
+### Cards
+
+
+
 ### Sidebar
 #### Intro
 As we set the theme already now we can switch over to the interface. On the left side I have the sidebard-card. This stays on every page in your dashboard - it's fixed.
