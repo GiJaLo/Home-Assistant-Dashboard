@@ -19,6 +19,9 @@ More information: https://hacs.xyz/docs/basic/getting_started
         - [Editing](#editing)
         - [Code-](#ed)
   - [Button-card](#button-card)
+        - [Intro](#editing)
+        - [Editing](#editing)
+        - [Code-](#ed)
   - [Mini-mediaplayer](#mini-mediaplayer)
 - [Code](#code)
   - [Sidebar](#sidebar)
@@ -38,7 +41,8 @@ Add this to your configuration.yaml
 ```yaml
 frontend:  themes: !include_dir_merge_named themes
 ```
-Don't forget to restart ;-)
+Don't forget to restart your HA
+
 More information: https://hacs.xyz/docs/categories/themes
 
 
