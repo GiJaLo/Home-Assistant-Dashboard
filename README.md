@@ -27,7 +27,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
   - [Sidebar](#sidebar)
   - [Button-card](#button-card)
   - [Mini-mediaplayer](#mini-mediaplayer)
-- [Examples + code](#examples + code)
+- [Examples](#examples)
 
 
 
@@ -215,7 +215,7 @@ tap_action:
   navigation_path: /scherm-beneden/energie
 ```
 
-## Examples + code
+## Examples
 ## Home
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
 ```yaml
