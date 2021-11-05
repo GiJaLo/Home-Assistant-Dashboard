@@ -614,69 +614,12 @@ views:
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Music-channels.jpg)
 
 ```yaml
-- title: '4-Muziek '
-    path: muziek
+- title: 4A-Zenders
+    path: zenders
+    icon: ''
     type: custom:grid-layout
     badges: []
     cards:
-      - type: custom:layout-card
-        layout_type: horizontal
-        layout: {}
-        cards:
-          - type: custom:mini-media-player
-            entity: media_player.eetplaats_speaker
-            hide:
-              name: true
-              icon: true
-              power: true
-              source: true
-              controls: true
-              volume: true
-            artwork: full-cover
-            toggle_power: false
-            scale: '1.5'
-          - type: vertical-stack
-            cards:
-              - type: custom:mini-media-player
-                hide:
-                  name: false
-                  icon: true
-                  power: true
-                  source: true
-                  controls: true
-                  info: true
-                name: Eetplaats Speaker (Master)
-                entity: media_player.eetplaats_speaker
-              - type: custom:mini-media-player
-                hide:
-                  name: false
-                  icon: true
-                  power: true
-                  source: true
-                  controls: true
-                  info: true
-                name: Keuken Speaker
-                entity: media_player.keuken_speaker
-              - type: custom:mini-media-player
-                hide:
-                  name: false
-                  icon: true
-                  power: true
-                  source: true
-                  controls: true
-                  info: true
-                name: Televisie Speaker
-                entity: media_player.televisie_speaker
-              - type: entities
-                entities:
-                  - entity: input_boolean.sonos_join_keuken
-                    icon: mdi:speaker
-                    name: Keuken speaker joinen
-                  - entity: input_boolean.sonos_join_televisie
-                    name: Televisie speaker joinen
-                    icon: mdi:speaker
-                title: Speakergroep
-            title: Volume Speakers
       - type: vertical-stack
         cards:
           - type: custom:button-card
@@ -688,30 +631,47 @@ views:
           - type: horizontal-stack
             cards:
               - type: custom:button-card
-                color_type: blank-card
-                color: rgba(0, 0, 0, 0)
-              - type: custom:button-card
+                entity_picture: /local/zenders/stubru.png
                 color_type: card
                 color: rgba(10, 10, 10, 0.4)
-                icon: mdi:radio
-                name: Zenders
-                tap_action:
-                  action: navigate
-                  navigation_path: /scherm-beneden/zenders
+                name: Studio Brussel
+                show_entity_picture: true
+                entity: input_boolean.muziek_stubru
               - type: custom:button-card
-                color_type: blank-card
-                color: rgba(0, 0, 0, 0)
-              - type: custom:button-card
+                entity_picture: /local/zenders/radio1.png
                 color_type: card
                 color: rgba(10, 10, 10, 0.4)
-                icon: mdi:spotify
-                name: Spotify
-                tap_action:
-                  action: navigate
-                  navigation_path: /scherm-beneden/spotify
+                name: Radio 1
+                show_entity_picture: true
+                entity: input_boolean.muziek_radio_1
               - type: custom:button-card
-                color_type: blank-card
-                color: rgba(0, 0, 0, 0)
+                entity_picture: /local/zenders/radio2.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Radio 2
+                show_entity_picture: true
+                entity: input_boolean.muziek_radio_2
+              - type: custom:button-card
+                entity_picture: /local/zenders/klara.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Klara
+                show_entity_picture: true
+                entity: input_boolean.muziek_klara
+              - type: custom:button-card
+                entity_picture: /local/zenders/mnm.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: MNM
+                show_entity_picture: true
+                entity: input_boolean.muziek_mnm
+              - type: custom:button-card
+                entity_picture: /local/zenders/qmusic.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Q-music
+                show_entity_picture: true
+                entity: input_boolean.muziek_qmusic
       - type: vertical-stack
         cards:
           - type: custom:button-card
@@ -719,75 +679,237 @@ views:
             color: rgba(0, 0, 0, 0)
             styles:
               card:
-                - height: 37px
+                - height: 0px
           - type: horizontal-stack
             cards:
               - type: custom:button-card
+                entity_picture: /local/zenders/radio1classics.png
                 color_type: card
                 color: rgba(10, 10, 10, 0.4)
-                icon: mdi:skip-previous
-                name: Vorige
-                tap_action:
-                  action: call-service
-                  service: media_player.media_previous_track
-                  service_data:
-                    entity_id: media_player.eetplaats_speaker
+                name: Radio 1 Classics
+                show_entity_picture: true
+                entity: input_boolean.muziek_radio_1_classics
               - type: custom:button-card
+                entity_picture: /local/zenders/nostalgie.png
                 color_type: card
                 color: rgba(10, 10, 10, 0.4)
-                icon: mdi:skip-next
-                name: Volgende
-                tap_action:
-                  action: call-service
-                  service: media_player.media_next_track
-                  service_data:
-                    entity_id: media_player.eetplaats_speaker
+                name: Nostalgie
+                show_entity_picture: true
+                entity: input_boolean.muziek_nostalgie
+              - type: custom:button-card
+                entity_picture: /local/zenders/willy.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Radio Willy
+                show_entity_picture: true
+                entity: input_boolean.muziek_willy_radio
+              - type: custom:button-card
+                entity_picture: /local/zenders/joe.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Joe Fm
+                show_entity_picture: true
+                entity: input_boolean.muziek_joe_fm
+              - type: custom:button-card
+                entity_picture: /local/zenders/lage landen.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Lage Landenlijst
+                show_entity_picture: true
+                entity: input_boolean.muziek_lage_landen
+              - type: custom:button-card
+                entity_picture: /local/zenders/bene.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Bene Bene
+                show_entity_picture: true
+                entity: input_boolean.muziek_bene
+      - type: vertical-stack
+        cards:
+          - type: custom:button-card
+            color_type: blank-card
+            color: rgba(0, 0, 0, 0)
+            styles:
+              card:
+                - height: 0px
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                entity_picture: /local/zenders/tijdloze.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: De Tijdloze
+                show_entity_picture: true
+                entity: input_boolean.muziek_tijdloze
+              - type: custom:button-card
+                entity_picture: /local/zenders/untz.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: UNTZ
+                show_entity_picture: true
+                entity: input_boolean.muziek_untz
+              - type: custom:button-card
+                entity_picture: /local/zenders/bruut.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Bruut
+                show_entity_picture: true
+                entity: input_boolean.muziek_bruut
+              - type: custom:button-card
+                entity_picture: /local/zenders/hooray.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Hooray
+                show_entity_picture: true
+                entity: input_boolean.muziek_hooray
+              - type: custom:button-card
+                entity_picture: /local/zenders/90's.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: MNM 90's & 00's
+                show_entity_picture: true
+                entity: input_boolean.muziek_mnm_90_en_00
+              - type: custom:button-card
+                entity_picture: /local/zenders/mnmhits.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: MNMN Hits
+                show_entity_picture: true
+                entity: input_boolean.muziek_mnm_hits
+      - type: vertical-stack
+        cards:
+          - type: custom:button-card
+            color_type: blank-card
+            color: rgba(0, 0, 0, 0)
+            styles:
+              card:
+                - height: 0px
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                entity_picture: /local/zenders/nws.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: VRT NIEUWS
+                show_entity_picture: true
+                entity: input_boolean.muziek_tijdloze
+              - type: custom:button-card
+                entity_picture: /local/zenders/classic21.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Classic 21
+                show_entity_picture: true
+                entity: input_boolean.muziek_untz
+              - type: custom:button-card
+                entity_picture: /local/zenders/goldies.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Goldies
+                show_entity_picture: true
+                entity: input_boolean.muziek_klara_continuo
+              - type: custom:button-card
+                entity_picture: /local/zenders/klara.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Klara Continuo
+                show_entity_picture: true
+                entity: input_boolean.muziek_klara_continuo
+              - type: custom:button-card
+                entity_picture: /local/zenders/kcrw.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: KCRW
+                show_entity_picture: true
+                entity: input_boolean.muziek_mnm_hits
+              - type: custom:button-card
+                entity_picture: /local/zenders/kexp.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: KEXP
+                show_entity_picture: true
+                entity: input_boolean.muziek_mnm_hits
+      - type: vertical-stack
+        cards:
+          - type: custom:button-card
+            color_type: blank-card
+            color: rgba(0, 0, 0, 0)
+            styles:
+              card:
+                - height: 0px
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                entity_picture: /local/zenders/jazz24.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Jazz 24
+                show_entity_picture: true
+                entity: input_boolean.muziek_tijdloze
+              - type: custom:button-card
+                entity_picture: /local/zenders/latin.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Latin Jazz
+                show_entity_picture: true
+                entity: input_boolean.muziek_untz
+              - type: custom:button-card
+                entity_picture: /local/zenders/blues.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Blues Jazz
+                show_entity_picture: true
+                entity: input_boolean.muziek_klara_continuo
+              - type: custom:button-card
+                entity_picture: /local/zenders/jazz.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Jazz
+                show_entity_picture: true
+                entity: input_boolean.muziek_klara_continuo
+              - type: custom:button-card
+                entity_picture: /local/zenders/klassiek.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Klassiek Jazz
+                show_entity_picture: true
+                entity: input_boolean.muziek_mnm_hits
+              - type: custom:button-card
+                entity_picture: /local/zenders/piano.png
+                color_type: card
+                color: rgba(10, 10, 10, 0.4)
+                name: Piano Jazz
+                show_entity_picture: true
+                entity: input_boolean.muziek_mnm_hits
+      - type: vertical-stack
+        cards:
+          - type: custom:button-card
+            color_type: blank-card
+            color: rgba(0, 0, 0, 0)
+            styles:
+              card:
+                - height: 40px
+          - type: horizontal-stack
+            cards:
+              - type: custom:button-card
+                color_type: blank-card
+                color: rgba(0, 0, 0, 0)
               - type: custom:button-card
                 color_type: blank-card
                 color: rgba(0, 0, 0, 0)
               - type: custom:button-card
                 color_type: card
                 color: rgba(10, 10, 10, 0.4)
-                icon: mdi:volume-minus
-                name: Stiller
+                icon: mdi:arrow-left
+                name: Terug
                 tap_action:
-                  action: call-service
-                  service: script.turn_on
-                  service_data:
-                    entity_id: script.muziek_volume_omlaag
-              - type: custom:button-card
-                color_type: card
-                color: rgba(10, 10, 10, 0.4)
-                icon: mdi:volume-plus
-                name: Luider
-                tap_action:
-                  action: call-service
-                  service: script.turn_on
-                  service_data:
-                    entity_id: script.muziek_volume_omhoog
+                  action: navigate
+                  navigation_path: /scherm-beneden/muziek
               - type: custom:button-card
                 color_type: blank-card
                 color: rgba(0, 0, 0, 0)
               - type: custom:button-card
-                color_type: card
-                color: rgba(10, 10, 10, 0.4)
-                icon: mdi:play-pause
-                name: Play/Pause
-                tap_action:
-                  action: call-service
-                  service: media_player.media_play_pause
-                  service_data:
-                    entity_id: media_player.eetplaats_speaker
-              - type: custom:button-card
-                color_type: card
-                color: rgba(10, 10, 10, 0.4)
-                icon: mdi:stop
-                name: Stop
-                tap_action:
-                  action: call-service
-                  service: media_player.media_stop
-                  service_data:
-                    entity_id: media_player.eetplaats_speaker
+                color_type: blank-card
+                color: rgba(0, 0, 0, 0)
 ```
 
 ## Vacuum Main (Choose floor)
