@@ -103,9 +103,9 @@ So what do we see here?
 Everything that is above views is the overall "setting" of your dashboard. Here is where we put the background and also the sidebar.
 Because these 2 things are fixed.
 
-All above 
-....
+
 ```yaml
+All above this
 views:
 ```
 
