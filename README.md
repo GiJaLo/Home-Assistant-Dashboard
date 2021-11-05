@@ -7,6 +7,7 @@ My Home Assistant Dashboard
 First of all, I would like to thank the whole awesome HA-community. I've found so much inspiration from other awesome setups and handy tools for setting up my dashboard. Will also post these in her.
 
 If you would like a setup like this, it would be handy if you already have HACS installed.
+
 More information: https://hacs.xyz/docs/basic/getting_started
 
 ## Overview <!-- omit in toc -->
