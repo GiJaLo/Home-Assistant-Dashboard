@@ -38,6 +38,7 @@ Add this to your configuration.yaml
 ```yaml
 frontend:  themes: !include_dir_merge_named themes
 ```
+Don't forget to restart ;-)
 More information: https://hacs.xyz/docs/categories/themes
 
 
