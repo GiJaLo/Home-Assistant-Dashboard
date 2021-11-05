@@ -253,27 +253,85 @@ views:
 So we are looking at our dashboard and at the moment we only have a sidebar on the left. Time to add some cards...
 As mentioned above in #setup the layout-card is the card where all the collections of cards are. (Like my homepage)
 
+- Click on add card
+- Scroll down to: Adjusted Layout-card
+- Now you have 2 tabs (layout and cards)
+- open cards
+- add the cards you want to add (like weather,...)
+- when finished press save
+
+### Code
+```yaml
+type: custom:layout-card
+layout_type: masonry
+layout: {}
+cards:
+  - type: custom:alarmo-card
+    entity: alarm_control_panel.alarmo
+    keep_keypad_visible: false
+    name: Alarm
+    use_clear_icon: false
+    button_scale: 1.3
+  - type: entities
+    entities:
+      - entity: sensor.recycleapp_afval_pmd
+        name: PMD
+        icon: mdi:bottle-soda-classic
+      - entity: sensor.recycleapp_afval_restafval
+        icon: mdi:delete-empty
+        name: Rest
+      - entity: sensor.recycleapp_afval_papier
+        icon: mdi:newspaper-variant
+        name: Papier/Karton
+      - entity: sensor.recycleapp_afval_grofvuil
+        name: Grof
+        icon: mdi:human-female
+```
+
 <hr style="border:8px solid gray"> </hr>
+
 ## Button-card
 ### Setup
-If the installation worked well we can add for example a simple button card to our new lovelace dashboard.
-- Open new dashboard
-- Topright corner click on the 3 dots
-- Configure UI
-- Add new Card
-- Scroll down to Manually (add your own adjusted card)
-- Past the code below
+Yupla, we have now a beautiful sidebar and a layout-card. Let's add a row at the bottom for some navigations to other views/pages/tabs.
 
+Again we add a card like the layout-card
+And we scroll down until: Add manually
+
+We paste the code from below, but here I did something special. 
+I added 2 rows for buttons, but the first row is blank (invisible)
+With this I can change the height for the row below with the buttons. To allign them with the home button from the side-bar.
+
+
+### Code
 ```yaml
-type: custom:button-card
-color_type: card
-color: rgba(10, 10, 10, 0.4)
-icon: mdi:flash
-name: Energie
-tap_action:
-  action: navigate
-  navigation_path: /scherm-beneden/energie
+type: vertical-stack
+cards:
+  - type: custom:button-card
+    color_type: blank-card
+    color: rgba(0, 0, 0, 0)
+    styles:
+      card:
+        - height: 55px
+  - type: horizontal-stack
+    cards:
+      - type: custom:button-card
+        color_type: card
+        color: rgba(10, 10, 10, 0.4)
+        icon: mdi:flash
+        name: Energie
+        tap_action:
+          action: navigate
+          navigation_path: /scherm-beneden/energie
+      - type: custom:button-card
+        color_type: card
+        color: rgba(10, 10, 10, 0.4)
+        icon: mdi:lock
+        name: Beveiliging
+        tap_action:
+          action: navigate
+          navigation_path: /scherm-beneden/beveiliging
 ```
+
 
 ## Examples
 ## Home
