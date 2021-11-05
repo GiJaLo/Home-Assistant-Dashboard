@@ -56,6 +56,7 @@ background: var(--background-image)
 
 ## HACS
 ### Sidebar
+#### Intro
 As we set the theme already now we can switch over to the interface. On the left side I have the sidebard-card. This stays on every page in your dashboard - it's fixed.
 
 Installation is through HACS - fronted 
@@ -82,7 +83,18 @@ Now you can find the sidebard-card in your frontend section off HACS.
 
 More information: https://github.com/DBuit/sidebar-card
 
-
+#### Editing
+To add the sidebar to your lovelace dashboard. You need to add it to your Raw Configuration Editor.
+The what the what?
+- Make a new lovelave dashboard/ or use your existing one
+- Open 
+- Topright corner click on the 3 dots
+- Configure UI
+- Choose start with an empty dashboard or not
+- Click on Take over
+- Again go to the Topright corner and click on the 3 dots
+- Click on "Raw Configuration Editor" (Could also have an other name, my HA is set to Dutch)
+- 
 ```yaml
 background: var(--background-image)
 sidebar:
