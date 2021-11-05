@@ -94,7 +94,9 @@ The what the what?
 - Click on Take over
 - Again go to the Topright corner and click on the 3 dots
 - Click on "Raw Configuration Editor" (Could also have an other name, my HA is set to Dutch)
-- 
+- Here you have the full file of your dashboard.
+
+
 ```yaml
 background: var(--background-image)
 sidebar:
@@ -162,5 +164,6 @@ sidebar:
           tap_action:
             action: navigate
             navigation_path: /scherm-beneden/0
+views:
 ```
 
