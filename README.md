@@ -15,8 +15,8 @@ If you would like a setup like this, it would be handy if you already have HACS 
 More information: https://hacs.xyz/docs/basic/getting_started
 
 ## Overview <!-- omit in toc -->
-- [Setup](#setup)
 - [Theme](#theme)
+- [Setup](#setup)
 - [HACS-Frontend](#hacs)
   - [Cards Used](#cards)
   - [Sidebar](#sidebar)
@@ -43,12 +43,6 @@ More information: https://hacs.xyz/docs/basic/getting_started
 
 <hr style="border:4px solid gray"> </hr>
 
-## Setup
-
-If you like my dashboard it is important to know how I've set this up. I like to use a lot of views/pages/tabs or whatever you like to call it.
-![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/overview.JPG)
-
-<hr style="border:4px solid gray"> </hr>
 
 ## Theme
 
@@ -77,6 +71,17 @@ background: var(--background-image)
 ```
 
 <hr style="border:4px solid gray"> </hr>
+
+## Setup
+
+If you like my dashboard it is important to know how I've set this up. I like to use a lot of views/pages/tabs or whatever you like to call it.
+This is an example below, I only added music and my robovacuum cleaner.
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/overview.JPG)
+
+
+
+<hr style="border:4px solid gray"> </hr>
+
 
 ## HACS-Frontend
 
