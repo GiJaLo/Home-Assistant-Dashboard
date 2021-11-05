@@ -45,7 +45,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
 ## Setup
 
 If you like my dashboard it is important to know how I've set this up. I like to use a lot of views/pages/tabs or whatever you like to call it.
-
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/overview.jpg)
 
 <hr style="border:4px solid gray"> </hr>
 ## Theme
