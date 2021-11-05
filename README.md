@@ -2,7 +2,7 @@
 My Home Assistant Dashboard
 
 
-![change_background](https://github.com/lorwel/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
 
 First of all, I would like to thank the whole awesome HA-community. I've found so much inspiration from other awesome setups and handy tools for setting up my dashboard. Will also post these in her.
 
@@ -215,5 +215,10 @@ tap_action:
   navigation_path: /scherm-beneden/energie
 ```
 
+## Examples
 
 
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Music.jpg)
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Music-channels.jpg)
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Vacuum.jpg)
