@@ -28,3 +28,7 @@ First of all, I would like to thank the whole awesome HA-community. I've found s
 For my GUI I've used the ios Dark theme (installed with HACS)
 
 More information: https://github.com/basnijholt/lovelace-ios-dark-mode-theme
+
+
+IMPORTANT: To use themes from HACS you'll have to add somde code to your configuration file.
+More information: https://hacs.xyz/docs/categories/themes
