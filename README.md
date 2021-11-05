@@ -15,6 +15,8 @@ More information: https://hacs.xyz/docs/basic/getting_started
 - [Theme](#theme)
 - [HACS](#hacs)
   - [Sidebar](#sidebar)
+        - [Intro](#editing)
+        - [Editing](#editing)
   - [Button-card](#button-card)
   - [Mini-mediaplayer](#mini-mediaplayer)
 - [Code](#code)
