@@ -42,7 +42,8 @@ For my GUI I've used the ios Dark theme (installed with HACS)
 
 More information: https://github.com/basnijholt/lovelace-ios-dark-mode-theme
 
-To have the shiny greeny background like mine, you have to add the background of your "Raw Configuration Editor". Don't know what this is? Will have a look at this later.
+To have the shiny greeny background like mine, you have to add the background to your "Raw Configuration Editor". Don't know what this is? Will have a look at this later.
+You should place this on top.
 ```yaml
 background: var(--background-image)
 ```
