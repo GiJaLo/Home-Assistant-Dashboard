@@ -27,7 +27,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
   - [Sidebar](#sidebar)
   - [Button-card](#button-card)
   - [Mini-mediaplayer](#mini-mediaplayer)
-- [Examples](#examples)
+- [Examples + code](#examples + code)
 
 
 
@@ -215,9 +215,9 @@ tap_action:
   navigation_path: /scherm-beneden/energie
 ```
 
-## Examples
+## Examples + code
 ## Home
-
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
 ```yaml
 views:
   - title: Home
@@ -426,7 +426,7 @@ views:
                   action: navigate
                   navigation_path: /scherm-beneden/temp
 ```
-![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
+
 ## Music Main
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Music.jpg)
 ## Music Channels
