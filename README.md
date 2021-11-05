@@ -17,6 +17,7 @@ More information: https://hacs.xyz/docs/basic/getting_started
   - [Sidebar](#sidebar)
         - [Intro](#editing)
         - [Editing](#editing)
+        - [Code-](#ed)
   - [Button-card](#button-card)
   - [Mini-mediaplayer](#mini-mediaplayer)
 - [Code](#code)
@@ -96,7 +97,16 @@ The what the what?
 - Click on "Raw Configuration Editor" (Could also have an other name, my HA is set to Dutch)
 - Here you have the full file of your dashboard.
 
+First have a look of the code below
 
+So what do we see here?
+Everything that is above
+
+```yaml
+views:
+```
+
+#### Code
 ```yaml
 background: var(--background-image)
 sidebar:
