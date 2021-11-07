@@ -300,7 +300,7 @@ And we scroll down until: Add manually
 
 We paste the code from below, but here I did something special. 
 I added 2 rows for buttons, but the first row is blank (invisible)
-With this I can change the height for the row below with the buttons. To allign them with the home button from the side-bar.
+With this I can change the height for the row below with the buttons. To align them with the home button from the side-bar.
 
 
 ### Code
