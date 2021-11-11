@@ -546,6 +546,7 @@ views:
                   navigation_path: /scherm-beneden/temp
 ```
 <hr style="border:4px solid gray"> </hr>
+
 ## Lights
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Lights11_11.jpg)
 
