@@ -6,6 +6,10 @@ My Home Assistant Dashboard
 
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
 
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Lights11_11.jpg)
+
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Music11_11.jpg)
+
 First of all, I would like to thank the whole awesome HA-community. I've found so much inspiration from other awesome setups and handy tools for setting up my dashboard. Will also post these in her.
 
 I'm not the CSS expert or any kind. I've challenged myself to make everything in Lovelace dashboard with custom cards. There are some workarounds for some problems that I created myself(workarounds but also problems). Maybe there are better solutions.. You can always let me know.
