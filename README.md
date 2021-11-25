@@ -2,8 +2,11 @@
 My Home Assistant Dashboard
 
 ***This page is still under construction!!!***
+**NEWER VERSION**
+![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/home_new.jpg)
 
 
+**OLD VERSION**
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Home.jpg)
 
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/Lights11_11.jpg)
