@@ -1,7 +1,14 @@
 # Home-Assistant-Dashboard
 My Home Assistant Dashboard
 
+
+
+
 ***This page is still under construction!!!***
+***Will update this page somewhere on february 2022*** 
+
+
+
 
 **NEWER VERSION**
 ![change_background](https://github.com/GiJaLo/Home-Assistant-Dashboard/blob/main/Pictures%20Dashboard/home_new.jpg)
