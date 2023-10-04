@@ -4,9 +4,6 @@ My Home Assistant Dashboard
 
 
 
-***This page is still under construction!!!***
-***Will update this page somewhere in february 2022*** 
-
 
 
 
